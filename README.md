@@ -3,7 +3,9 @@
 This master's degree project is about creating a system to recognize Russian Sign Language (RSL) gestures using EMG sensors and inertial sensor data. The dataset includes the RSL dactyl alphabet and basic phrases like "Привет" (Hello), "Спасибо" (Thanks), and "До свидания" (Goodbye).
 
 **RSL Dactyl Alphabet:**
-![RSL Dactyl Alphabet](Demo/dact_alph.jpg)
+<p align="center">
+  <img src=".github/assets/dact_alph.jpg" alt="RSL Dactyl Alphabet" width="100%">
+</p>
 
 ## Table of Contents
 
@@ -33,7 +35,9 @@ The system is divided into three main modules:
 - **Signal Processing Module**: Includes preprocessing and feature extraction from time and frequency domains.
 - **Classification Module**: Involves training and using machine learning models for gesture recognition.
 
-![System Architecture](Demo/system_architecture_image.png)
+<p align="center">
+  <img src=".github/assets/system_architecture_image.png" alt="System Architecture" width="100%">
+</p>
 
 ### Sensors Module
 
@@ -114,7 +118,9 @@ The dataset was recorded over three sessions, each separated by a day. For each 
 - **Inertial Sensor**:
   - Outer side of the hand
 
-![Sensor Placement](Demo/sensor_placement_image.png)
+<p align="center">
+  <img src=".github/assets/sensor_placement_image.png" alt="Sensor Placement" width="100%">
+</p>
 
 ### Models Performance
 
@@ -138,7 +144,9 @@ For each gesture, 30 repetitions were recorded, resulting in a confusion matrix.
 
 ### Confusion matrix
 
-![Real-time confusion_matrix](Demo/confusion_matrix.jpg)
+<p align="center">
+  <img src=".github/assets/confusion_matrix.jpg" alt="Real-time confusion_matrix" width="100%">
+</p>
 
 Real-time metrics values:
 
@@ -160,7 +168,9 @@ The results indicate a high accuracy of 0.994 in gesture recognition. Notably, t
   - Opens a matplotlib window for sensor data visualization
   - Allows for gesture selection, file saving, and deletion
 
-![VSCode Tasks](Demo/write_ds_window.png)
+<p align="center">
+  <img src=".github/assets/write_ds_window.png" alt="Dataset recording window" width="100%">
+</p>
 
 ### **show_dataset.py**: 
 *Views recorded dataset files.*
@@ -177,7 +187,9 @@ The results indicate a high accuracy of 0.994 in gesture recognition. Notably, t
   - Displays sensor data using matplotlib.
   - Outputs recognized gesture and confidence score.
 
-![Real-time Demo](Demo/demo_real_time.gif)
+<p align="center">
+  <img src=".github/assets/demo_real_time.gif" alt="Real-time Demo" width="65%">
+</p>
 
 ## Configuration
 
@@ -189,16 +201,18 @@ This project is configured to be run in Visual Studio Code (VSCode). Each script
 
 ### Tasks in VSCode
 
+- `💀 run EMG` — Recognize gestures in real time from sensor data.
+- `📝 write dataset` — Record sensor data for selected gestures.
+- `📈 show dataset` — Browse and visualize recorded dataset files.
+- `🏋️‍♀️ train model` — Train and evaluate gesture recognition models.
+- `🕓 estimate time` — Measure preprocessing, feature extraction, and classification times on recorded data.
+
 ### Steps to Run
 
 1. **Install Python@3.12**: It doesn't work with eralier versions.
 2. **Open VSCode**: Open the project folder in VSCode.
 3. **Configure System**: Edit `emg_parameters.json` as needed.
 4. **Run Task**: From the VSCode menu, go to `Terminal > Run Task`, and choose the desired task.
-
-The list of tasks configured in VSCode:
-
-![VSCode Tasks](Demo/tasks.jpg)
 
 ## STM32 Firmware
 
